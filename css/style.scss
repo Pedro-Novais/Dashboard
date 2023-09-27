@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans&family=Poppins:wght@200;300&display=swap');
 @import '_colors.scss';
-
-@mixin container-row{
-    display:flex;
-    flex-direction:row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-@mixin container-column{
-    display:flex;
-    flex-direction:column;
-    justify-content: flex-start;
-    align-items: center;
-}
+@import 'mixin.scss';
 
 *{
     box-sizing: border-box;
@@ -25,18 +12,16 @@
 body{
     width:100%;
     height:100vh;
-    //background-color: $gray-dark;
-    background-color: green;;
+    background-color: $gray;
     header{
         @include container-row;
         justify-content: center;
         position: sticky;
         top: 0;
-        background-color: $gray;
+        background-color: $gray-dark;
         width: 100%;
         height: 10%;
-        box-shadow: 0 0.1vw 0.1vw $black;
-        //font-size: 1vw;
+        font-size: 1vw;
         color:$white;
         #nav{
             @include container-row;
@@ -60,7 +45,7 @@ body{
                 }
                 li:hover{
                     transition: 0.2s;
-                    background-color: $gray-dark;
+                    background-color: $gray;
                     cursor:pointer;
                 }
             }
@@ -69,11 +54,13 @@ body{
     #container{
         @include container-row;
         justify-content: space-between;
-        margin: 0.5vw auto;
+        margin: 2vw auto;
         background-color: $gray-dark;
-        width:99%;
-        height: 120%;
+        width:95%;
+        height: 90%;
+        border-radius: 0.5vw;
         z-index: 2;
+        box-shadow: 0 0 0.2vw black;
         #side-bar{
             @include container-column;
             background-color: $gray;
@@ -83,25 +70,26 @@ body{
             padding: 0.5vw;
             margin-left: 0.5vw;
             box-shadow: 0 0.1vw 0.3vw $black;
+            h2{
+                font-size: 0.9vw;
+            }
             #img-profile{
                 background-color: $white;
-                width: 60%;
-                height: 15%;
+                width: 8vw;
+                height: 8vw;
                 border-radius: 50%;
             }
             .list-side{
                 width: 70%;
                 height:25%;
                 margin-top: 0.7vw;
-                color:$gray-dark;
-                h2{
-                    color: $white;
-                }
+                color:$white;
             }
             .options-side{
                 width:60%;
                 margin-top: 0.5vw;
                 padding:0.2vw;
+                font-size: 0.8vw;
                 border-radius: 5px;
                 transition: 0.2s;
             }
@@ -109,7 +97,7 @@ body{
                 transition: 0.2s;
                 background-color: rgb(135, 247, 255);
                 cursor:pointer;
-                color:$gray-dark;
+                color:$gray;
             }
         }
         #dashboard-info{
@@ -142,7 +130,7 @@ body{
                     background-color: $gray;
                     width: 49%;
                     height: 95%;
-                    border-radius: 20px;
+                    border-radius: 10px;
                     box-shadow: 0 0.1vw 0.1vw $black;
                 }
             }
@@ -163,27 +151,33 @@ body{
                     background-color: $gray;
                     width: 31%;
                     height: 95%;
-                    border-radius: 20px;
+                    border-radius: 10px;
                     box-shadow: 0 0.1vw 0.1vw $black;
                     h2{
                         align-self: flex-start;
+                        font-size: 0.7vw;
                     }
                     .container-graphic{
                         @include container-row;
                         justify-content: space-around;
                         align-items: flex-end;
                         width:95%;
-                        height: 85%;
+                        height: 80%;
                         .graphic-bars{
                             @include container-column;
-                            justify-content: flex-end;
+                            justify-content: space-between;
                             background-color: $gray-dark;
                             width: 20%;
                             height:100%;
                             padding: 0.5vw;
-                            p{
+                            transition:1s;
+                            .month{
                                 font-size: 0.7vw;
-                                color: $white-dark
+                                color: $white-dark;
+                            }
+                            .price{
+                                font-size: 0.5vw;
+                                color:$white-dark;
                             }
                         }
                     }
