@@ -87,8 +87,8 @@ body #container #side-bar {
 }
 body #container #side-bar #img-profile {
   background-color: #F2F2F2;
-  width: 70%;
-  height: 25%;
+  width: 60%;
+  height: 15%;
   border-radius: 50%;
 }
 body #container #side-bar .list-side {
@@ -135,7 +135,7 @@ body #container #dashboard-info #first-bar {
 }
 body #container #dashboard-info #first-bar .first {
   background-color: #696969;
-  width: 20%;
+  width: 23%;
   height: 90%;
   border-radius: 10px;
   box-shadow: 0 0.1vw 0.1vw #0D0D0D;
