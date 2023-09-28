@@ -60,7 +60,7 @@ const products_values = {
         }
     }
 }
-
+    
 const graphic_one = {
     first: document.querySelector('#graphic-one-a'),
     second: document.querySelector('#graphic-two-a'),
@@ -86,8 +86,13 @@ const btn_year ={
     last: document.querySelector('#last-year'),
     mid: document.querySelector('#mid-year'),
     first: document.querySelector('#first-year')
-}
+}   
+    let array_price = [];
+    array_price = document.querySelectorAll('.price')
+    let array_priceF  = Object.entries(array_price); 
+    console.log(array_priceF) 
     let max_price = 0;
+
     function getMaxPrice(max){
         max_price = max[0][1]
         for(let i=0;i<max.length;i++){
@@ -97,17 +102,13 @@ const btn_year ={
         }
         return max_price;
     }
+
     btn_year.last.addEventListener("click", () =>{
     let array_product;
     let array_graphic;
     for(let i = 0; i<3; i++){
         if(i==0){
             array_product = products_values.first_product.last_year
-            /*
-            Para inserir o valor de forma automatizada ao mudar o gráfico
-            let teste = array_graphic = Object.entries(array_product);
-            console.log(teste[0][1])
-            */
             array_graphic = Object.entries(graphic_one);
         }else if(i==1){
             array_product = products_values.second_product.last_year
@@ -116,13 +117,35 @@ const btn_year ={
             array_product = products_values.third_product.last_year
             array_graphic = Object.entries(graphic_three);
         }
-        const year_product = Object.entries(array_product);    
-        
+
+        let year_product = Object.entries(array_product);    
         getMaxPrice(year_product);
 
+        let init = 0;
         for(let i=0; i<year_product.length;i++){
+            
             let qnt = (year_product[i][1] / max_price) * 100;
             array_graphic[i][1].style.height = `${qnt}%`
+            
+            if(init == 0){
+                for(let ini = 0; ini<4;ini++){
+
+                    array_priceF[ini][1].style.backgroundColor="red";
+                    array_priceF[ini][1].innerHTML = `R$${year_product[init][1]},00`;
+                    init++
+                    console.log(init)
+                }
+            }/*
+                else if(init == 4){
+                init = 0;
+                for(let ini = 4; ini<8;ini++){
+                    array_priceF[ini][1].style.backgroundColor="red";
+                    array_priceF[ini][1].innerHTML = `R$${year_product[init][1]},00`;
+                    init++
+                    console.log("aqui chegou " +init)
+                }
+            }
+            */
         }
     }
 })
@@ -147,6 +170,7 @@ btn_year.mid.addEventListener("click", function(){
 
         for(let i=0; i<year_product.length;i++){
             let qnt = (year_product[i][1] / max_price) * 100;
+            //array_price[i].innerHTML = `R$${year_product[i][1]},00`
             array_graphic[i][1].style.height = `${qnt}%`
         }
     }
@@ -172,6 +196,9 @@ btn_year.first.addEventListener("click", function(){
 
         for(let i=0; i<year_product.length;i++){
             let qnt = (year_product[i][1] / max_price) * 100;
+            //Preço muda automaticamente no gráfico ao escolher o ano
+            //array_price[i].innerHTML = `R$${year_product[i][1]},00`
+            //Gráfico muda automaticamente no gráfico ao escolher o ano
             array_graphic[i][1].style.height = `${qnt}%`
         }
     }

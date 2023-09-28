@@ -69,7 +69,7 @@ body{
             border-radius: 10px;
             padding: 0.5vw;
             margin-left: 0.5vw;
-            box-shadow: 0 0.1vw 0.3vw $black;
+            box-shadow: 0 0 0.2vw $black;
             h2{
                 font-size: 0.9vw;
             }
@@ -117,7 +117,6 @@ body{
                     width: 23%;
                     height: 90%;
                     border-radius: 10px;
-                    box-shadow: 0 0.1vw 0.1vw $black;
                 }
             }
             #second-bar{
@@ -131,7 +130,6 @@ body{
                     width: 49%;
                     height: 95%;
                     border-radius: 10px;
-                    box-shadow: 0 0.1vw 0.1vw $black;
                 }
             }
             #third-bar{
@@ -152,7 +150,6 @@ body{
                     width: 31%;
                     height: 95%;
                     border-radius: 10px;
-                    box-shadow: 0 0.1vw 0.1vw $black;
                     h2{
                         align-self: flex-start;
                         font-size: 0.7vw;

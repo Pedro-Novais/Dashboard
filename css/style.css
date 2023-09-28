@@ -85,7 +85,7 @@ body #container #side-bar {
   border-radius: 10px;
   padding: 0.5vw;
   margin-left: 0.5vw;
-  box-shadow: 0 0.1vw 0.3vw #0D0D0D;
+  box-shadow: 0 0 0.2vw #0D0D0D;
 }
 body #container #side-bar h2 {
   font-size: 0.9vw;
@@ -141,7 +141,6 @@ body #container #dashboard-info #first-bar .first {
   width: 23%;
   height: 90%;
   border-radius: 10px;
-  box-shadow: 0 0.1vw 0.1vw #0D0D0D;
 }
 body #container #dashboard-info #second-bar {
   display: flex;
@@ -158,7 +157,6 @@ body #container #dashboard-info #second-bar .mid {
   width: 49%;
   height: 95%;
   border-radius: 10px;
-  box-shadow: 0 0.1vw 0.1vw #0D0D0D;
 }
 body #container #dashboard-info #third-bar {
   display: flex;
@@ -185,7 +183,6 @@ body #container #dashboard-info #third-bar .end {
   width: 31%;
   height: 95%;
   border-radius: 10px;
-  box-shadow: 0 0.1vw 0.1vw #0D0D0D;
 }
 body #container #dashboard-info #third-bar .end h2 {
   align-self: flex-start;
