@@ -29,44 +29,72 @@
             </div>
             <div class="list-side">
                 <h2>Produto de Análise</h2>
-                    <div class="options-side">Produto A</div>
-                    <div class="options-side">Produto B</div>
-                    <div class="options-side">Produto C</div>
+                    <div class="options-side" id="product-side-a" onclick="fun_pro_one(this)">Produto A</div>
+                    <div class="options-side" id="product-side-b" onclick="fun_pro_two(this)">Produto B</div>
+                    <div class="options-side" id="product-side-c" onclick="fun_pro_three(this)">Produto C</div>
             </div>
         </div>
 
         <div id="dashboard-info">
 
             <div id="first-bar">
-                <div class="first"></div>
-                <div class="first"></div>
-                <div class="first"></div>
-                <div class="first"></div>
+                <div class="first pro-a" onclick="fun_pro_one(this)">
+                    <h2 class="title">Produto A</h2>
+                    <div id="product-a" class="products">
+                        <div class="circle-icon" id="back-icon-a"><i class="fa-solid fa-shirt"></i></div>
+                        <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facilis id, hic.</p>
+                    </div>
+                </div>
+                <div class="first pro-b" onclick="fun_pro_two(this)">
+                    <h2 class="title">Produto B</h2>
+                    <div id="product-b"class="products">
+                        <div class="circle-icon" id="back-icon-b"><i class="fa-solid fa-tablet"></i></div>
+                        <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facilis id, hic.</p>
+                    </div>
+                </div>
+                <div class="first pro-c" onclick="fun_pro_three(this)">
+                    <h2 class="title">Produto C</h2>
+                    <div id="product-c" class="products">
+                        <div class="circle-icon" id="back-icon-c"><i class="fa-solid fa-headphones"></i></div>
+                        <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facilis id, hic.</p>
+                    </div>
+                </div>
+                <div class="first tot">
+                    <h2 class="title">Total</h2>
+                    <div id="total" class="products">
+                        <div class="circle-icon" id="back-icon-total"><i class="fa-solid fa-clipboard-check"></i></div>
+                        <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facilis id, hic.</p>
+                    </div>
+                </div>
             </div>
 
             <div id="second-bar">
-                <div class="mid"></div>
-                <div class="mid"></div>
+                <div class="mid" id="fatury">
+                    <h2 class="title">Faturamento e Impacto</h2>
+                </div>
+                <div class="mid">
+                    <h2 class="title">Análise</h2>
+                </div>
             </div>
 
             <div id="third-bar">
                 <div class="end" id="graphic-a">
                     <h2>Produto A</h2>
                     <div class="container-graphic">
-                        <div class="graphic-bars" id="graphic-one-a">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars one" id="graphic-one-a">
+                            <p class="price"></p>
                             <p class="month">Jan/Mar</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-two-a">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars one" id="graphic-two-a">
+                            <p class="price"></p>
                             <p class="month">Abr/Jun</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-three-a">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars one" id="graphic-three-a">
+                            <p class="price"></p>
                             <p class="month">Jul/Set</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-four-a">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars one" id="graphic-four-a">
+                            <p class="price"></p>
                             <p class="month">Out/Dez</p>
                         </div>
                     </div>
@@ -74,20 +102,20 @@
                 <div class="end" id="graphic-b">
                     <h2>Produto B</h2>
                     <div class="container-graphic">
-                        <div class="graphic-bars" id="graphic-one-b">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars two" id="graphic-one-b">
+                            <p class="price"></p>
                             <p class="month">Jan/Mar</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-two-b">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars two" id="graphic-two-b">
+                            <p class="price"></p>
                             <p class="month">Abr/Jun</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-three-b">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars two" id="graphic-three-b">
+                            <p class="price"></p>
                             <p class="month">Jul/Set</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-four-b">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars two" id="graphic-four-b">
+                            <p class="price"></p>
                             <p class="month">Out/Dez</p>
                         </div>
                     </div>
@@ -95,20 +123,20 @@
                 <div class="end" di="graphic-c">
                     <h2>Produto C</h2>
                     <div class="container-graphic">
-                        <div class="graphic-bars" id="graphic-one-c">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars three" id="graphic-one-c">
+                            <p class="price"></p>
                             <p class="month">Jan/Mar</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-two-c">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars three" id="graphic-two-c">
+                            <p class="price"></p>
                             <p class="month">Abr/Jun</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-three-c">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars three" id="graphic-three-c">
+                            <p class="price"></p>
                             <p class="month">Jul/Set</p>
                         </div>
-                        <div class="graphic-bars" id="graphic-four-c">
-                            <p class="price">R$100,00</p>
+                        <div class="graphic-bars three" id="graphic-four-c">
+                            <p class="price"></p>
                             <p class="month">Out/Dez</p>
                         </div>
                     </div>
@@ -120,6 +148,8 @@
     <footer>teste
         <p>Teste</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/graphic.js"></script>
+    <script src="js/first_bar.js"></script>
+    <script src="https://kit.fontawesome.com/f674cd130e.js" crossorigin="anonymous"></script>
 </body>
 </html>

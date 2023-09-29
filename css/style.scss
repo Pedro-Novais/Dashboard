@@ -20,8 +20,7 @@ body{
         top: 0;
         background-color: $gray-dark;
         width: 100%;
-        height: 10%;
-        font-size: 1vw;
+        height: 8%;
         color:$white;
         #nav{
             @include container-row;
@@ -29,8 +28,8 @@ body{
             width: 95%;
             text-transform: uppercase;
             letter-spacing: 1px;
-            p{
-                font-size: 1.2vw;
+            h2{
+                font-size: 0.9vw;
             }
             ul{
                 @include container-row;
@@ -42,6 +41,7 @@ body{
                     text-align: center;
                     width:30%;
                     border-radius: 2vw;
+                    font-size: 0.8vw;
                 }
                 li:hover{
                     transition: 0.2s;
@@ -60,16 +60,15 @@ body{
         height: 90%;
         border-radius: 0.5vw;
         z-index: 2;
-        box-shadow: 0 0 0.2vw black;
         #side-bar{
             @include container-column;
-            background-color: $gray;
+            background-color: $gray-darkl;
             width: 15%;
             height:95%;
             border-radius: 10px;
             padding: 0.5vw;
             margin-left: 0.5vw;
-            box-shadow: 0 0 0.2vw $black;
+            box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw black;
             h2{
                 font-size: 0.9vw;
             }
@@ -92,12 +91,16 @@ body{
                 font-size: 0.8vw;
                 border-radius: 5px;
                 transition: 0.2s;
+                padding-left: 0.8vw;
             }
             .options-side:hover{
                 transition: 0.2s;
-                background-color: rgb(135, 247, 255);
+                background-color: #3a60b1;
                 cursor:pointer;
-                color:$gray;
+                color:$white;
+            }
+            .options-side-enable{
+                background-color: #3a60b1;
             }
         }
         #dashboard-info{
@@ -105,7 +108,7 @@ body{
             justify-content: flex-start;
             width: 82%;
             height: 100%;
-            padding:0.5vw; 
+            padding:0.5vw;
             #first-bar{
                 @include container-row;
                 justify-content: space-between;
@@ -113,10 +116,77 @@ body{
                 height: 25%;
                 padding: 0.25vw;
                 .first{
-                    background-color: $gray;
+                    @include container-column;
+                    align-items: flex-start;
+                    background-color: #525252;
                     width: 23%;
                     height: 90%;
+                    padding: 0.3vw 0 0 1vw;
                     border-radius: 10px;
+                    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw black;
+                    transition: 0.2s;
+                    .title{
+                        font-size: 0.7vw;
+                        color:$white;
+                    }
+                    .products{
+                        @include container-row;
+                        margin-top:0.5vw;
+                        i{
+                            margin-top: 0.7vw;
+                            font-size: 3vw;
+                            margin:0.1vw;
+                            color:$white;
+                        }
+                        p{
+                            font-size: 0.7vw;
+                            margin-left: 1vw;
+                        }
+                        #back-icon-a{
+                            background-color: $graphicOne;
+                        }
+                        #back-icon-b{
+                            background-color: $graphicTwo;
+                        }
+                        #back-icon-c{
+                            background-color: $graphicThree;
+                        }
+                        #back-icon-total{
+                            background-color: #3a60b1;
+                        }
+                        .circle-icon{
+                            @include container-column;
+                            justify-content: center;
+                            border-radius: 50%;
+                            height:4vw;
+                            width: 10vw;
+                        }
+                    }
+                }
+                .pro-a:hover{
+                    background-color: #df34ba50;
+                    cursor:pointer;
+                }
+                .pro-b:hover{
+                    background-color: #368c3650;
+                    cursor: pointer;
+                }
+                .pro-c:hover{
+                    background-color: #c7722250;
+                    cursor: pointer;
+                }
+                .tot:hover{
+                    background-color: #3a60b150;
+                    cursor: pointer;
+                }
+                .first-view-enable-a{
+                    background-color: #df34ba50;
+                }
+                .first-view-enable-b{
+                    background-color: #368c3650;
+                }
+                .first-view-enable-c{
+                    background-color: #c7722250;
                 }
             }
             #second-bar{
@@ -126,10 +196,16 @@ body{
                 height: 45%;
                 padding: 0.25vw;
                 .mid{
-                    background-color: $gray;
+                    background-color: $gray-darkl;
                     width: 49%;
                     height: 95%;
+                    padding: 0.3vw 0 0 1vw;
                     border-radius: 10px;
+                    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw black;
+                    .title{
+                        font-size: 0.9vw;
+                        color:$white;
+                    }
                 }
             }
             #third-bar{
@@ -146,10 +222,11 @@ body{
                 .end{
                     @include container-column;
                     justify-content: space-between;
-                    background-color: $gray;
+                    background-color: $gray-darkl;
                     width: 31%;
                     height: 95%;
                     border-radius: 10px;
+                    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw black;
                     h2{
                         align-self: flex-start;
                         font-size: 0.7vw;
@@ -163,7 +240,6 @@ body{
                         .graphic-bars{
                             @include container-column;
                             justify-content: space-between;
-                            background-color: $gray-dark;
                             width: 20%;
                             height:100%;
                             padding: 0.5vw;
@@ -176,6 +252,15 @@ body{
                                 font-size: 0.5vw;
                                 color:$white-dark;
                             }
+                        }
+                        .one{
+                            background-color: $graphicOne;
+                        }
+                        .two{
+                            background-color: $graphicTwo;
+                        }
+                        .three{
+                            background-color: $graphicThree;
                         }
                     }
                 }
