@@ -71,9 +71,85 @@
             <div id="second-bar">
                 <div class="mid" id="fatury">
                     <h2 class="title">Faturamento e Impacto</h2>
+                    <div id="graphic-area">
+                        <div id="side-area">
+                            <div id="price-area-max" class="side-price"><p>R$150.000</p></div>
+                            <div id="price-area-mid" class="side-price"><p>R$125.000</p></div>
+                            <div id="price-area-min" class="side-price"><p>R$100.000</p></div>
+                            <div id="price-area-zero" class="side-price"><p>R$0</p></div>
+                        </div>
+                        <div id="infos-area">
+                            <div id="line-area">
+                                <div id="point-line">
+                                    <div class="trace"></div>
+                                    <div class="trace"></div>
+                                    <div class="trace"></div>
+                                    <div class="trace"></div>
+                                </div>
+                                <div id="container-bars">
+                                    <div class="bars" id="bar-jan"></div>
+                                    <div class="bars" id="bar-fev"></div>
+                                    <div class="bars" id="bar-mar"></div>
+                                    <div class="bars" id="bar-abr"></div>
+                                    <div class="bars" id="bar-mai"></div>
+                                    <div class="bars" id="bar-jun"></div>
+                                    <div class="bars" id="bar-jul"></div>
+                                    <div class="bars" id="bar-ago"></div>
+                                    <div class="bars" id="bar-set"></div>
+                                    <div class="bars" id="bar-out"></div>
+                                    <div class="bars" id="bar-nov"></div>
+                                    <div class="bars" id="bar-dez"></div>
+                                </div>
+                            </div>
+                            <div id="month-area">
+                                <p>Jan</p>
+                                <p>Fev</p>
+                                <p>Mar</p>
+                                <p>Abr</p>
+                                <p>Mai</p>
+                                <p>Jun</p>
+                                <p>Jul</p>
+                                <p>Ago</p>
+                                <p>Set</p>
+                                <p>Out</p>
+                                <p>Nov</p>
+                                <p>Dez</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="mid">
                     <h2 class="title">Análise</h2>
+                    <div id="analysis">
+                        <div id="analysis-sales">
+                                <div id="first-sales">
+                                    <div id="first-sales-form" class="sales-form">
+                                        <div class="analysis-circle">
+                                            <h1 id="info-bolet">12,24%</h1>
+                                            <p class="default-par">Boleto Bancário</p>
+                                        </div>
+                                    </div>
+                                    <div id="second-sales-form" class="sales-form">
+                                        <div class="analysis-circle">
+                                            <h1 id="info-card">87,76%</h1>
+                                            <p class="default-par">Cartão de Crédito</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="third-sales-form">
+                                    <h1 id="info-sale-brazil">784</h1>
+                                    <p id="default-par-third">Vendas no Brasil</p>
+                                </div>
+                            </div>
+                        <div id="analysis-map">
+                            <div id="regions">
+                                <div id="region-sul">teste</div>
+                            </div>
+                            <div id="svg-map">
+                                <object data="svg/Brazil_Map.svg" id="svg"></object>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -145,7 +221,7 @@
 
         </div>
     </main>
-    <footer>teste
+    <footer>
         <p>Teste</p>
     </footer>
     <script src="js/graphic.js"></script>
