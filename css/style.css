@@ -248,18 +248,19 @@ body #container #dashboard-info #second-bar #fatury #graphic-area {
   height: 88%;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #side-area {
-  align-self: flex-start;
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   justify-content: space-between;
   width: 15%;
-  height: 90%;
+  height: 79%;
+  margin-bottom: 2vw;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #side-area .side-price p {
   color: #F2F2F2;
-  font-size: 0.5vw;
+  font-size: 0.7vw;
   margin-top: 0.2vw;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area {
@@ -289,7 +290,7 @@ body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #l
   position: absolute;
   z-index: 1;
   width: 30.5%;
-  height: 29.7%;
+  height: 33%;
   margin-bottom: 0.1vw;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #point-line .trace {
@@ -308,14 +309,14 @@ body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #l
   justify-content: space-around;
   align-items: flex-end;
   margin-right: 0.95vw;
-  width: 33%;
+  width: 32.9%;
   height: 5%;
   padding: 0 0.5vw;
-  margin-bottom: 0.35vw;
+  margin-bottom: 0.45vw;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars .bars {
   font-size: 0.7vw;
-  height: 450%;
+  height: 500%;
   width: 4%;
   background-color: #3a60b1;
   box-shadow: 0.2vw 0vw 0.1vw 0vw #223766;
@@ -323,17 +324,21 @@ body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #l
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars #bar-set {
   height: 300%;
 }
+body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars #bar-fev {
+  height: 480%;
+}
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #month-area {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
-  width: 95%;
+  justify-content: flex-start;
+  width: 98%;
   height: 10%;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #month-area p {
-  font-size: 0.5vw;
+  margin-right: 1.5vw;
+  font-size: 0.7vw;
   color: #F2F2F2;
 }
 body #container #dashboard-info #second-bar #analysis {
@@ -349,7 +354,7 @@ body #container #dashboard-info #second-bar #analysis #analysis-sales {
   justify-content: flex-start;
   align-items: center;
   justify-content: center;
-  width: 65%;
+  width: 70%;
   height: 100%;
   padding: 0.3vw;
 }
@@ -375,9 +380,8 @@ body #container #dashboard-info #second-bar #analysis #analysis-sales #first-sal
   justify-content: flex-start;
   align-items: center;
   justify-content: center;
-  margin: 0.1vw;
   height: 50%;
-  width: 95%;
+  width: 100%;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-sales #first-sales .sales-form .analysis-circle {
   display: flex;
@@ -385,8 +389,8 @@ body #container #dashboard-info #second-bar #analysis #analysis-sales #first-sal
   justify-content: flex-start;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  height: 100%;
+  width: 85%;
+  height: 90%;
   border: solid 0.2vw #F2F2F2;
   border-radius: 1rem;
   background-color: #404040;
@@ -405,7 +409,7 @@ body #container #dashboard-info #second-bar #analysis #analysis-sales #third-sal
   background-color: #F2F2F2;
   width: 9.2vw;
   height: 9.2vw;
-  border: solid 0.2vw #404040;
+  border: solid 0.2vw #0D0D0D;
   border-radius: 50%;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-sales #third-sales-form #info-sale-brazil {
@@ -416,16 +420,21 @@ body #container #dashboard-info #second-bar #analysis #analysis-sales #third-sal
   color: #0D0D0D;
   font-size: 0.7vw;
 }
+body #container #dashboard-info #second-bar #analysis #analysis-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+}
 body #container #dashboard-info #second-bar #analysis #analysis-map #svg-map {
-  position: absolute;
-  z-index: 2;
-  border: solid 2px red;
-  width: 10%;
-  height: 10vw;
-  bottom: 13vw;
+  height: 16vw;
+  margin-bottom: 2vw;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-map #svg-map #svg {
-  width: 20%;
+  position: relative;
+  height: 100%;
+  left: 1vw;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-map #region-sul {
   position: absolute;
@@ -442,7 +451,7 @@ body #container #dashboard-info #second-bar .mid {
 }
 body #container #dashboard-info #second-bar .mid .title {
   margin-left: 0.5vw;
-  font-size: 0.6vw;
+  font-size: 1vw;
   color: #F2F2F2;
 }
 body #container #dashboard-info #third-bar {
