@@ -38,21 +38,21 @@
         <div id="dashboard-info">
 
             <div id="first-bar">
-                <div class="first pro-a" onclick="fun_pro_one(this)">
+                <div class="first pro-a">
                     <h2 class="title">Produto A</h2>
                     <div id="product-a" class="products">
                         <div class="circle-icon" id="back-icon-a"><i class="fa-solid fa-shirt"></i></div>
                         <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facilis id, hic.</p>
                     </div>
                 </div>
-                <div class="first pro-b" onclick="fun_pro_two(this)">
+                <div class="first pro-b">
                     <h2 class="title">Produto B</h2>
                     <div id="product-b"class="products">
                         <div class="circle-icon" id="back-icon-b"><i class="fa-solid fa-tablet"></i></div>
                         <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facilis id, hic.</p>
                     </div>
                 </div>
-                <div class="first pro-c" onclick="fun_pro_three(this)">
+                <div class="first pro-c">
                     <h2 class="title">Produto C</h2>
                     <div id="product-c" class="products">
                         <div class="circle-icon" id="back-icon-c"><i class="fa-solid fa-headphones"></i></div>
@@ -70,13 +70,13 @@
 
             <div id="second-bar">
                 <div class="mid" id="fatury">
-                    <h2 class="title">Faturamento e Impacto</h2>
+                    <h2 class="title">Faturamento Atual</h2>
                     <div id="graphic-area">
                         <div id="side-area">
-                            <div id="price-area-max" class="side-price"><p>R$150.000</p></div>
-                            <div id="price-area-mid" class="side-price"><p>R$125.000</p></div>
-                            <div id="price-area-min" class="side-price"><p>R$100.000</p></div>
-                            <div id="price-area-zero" class="side-price"><p>R$0</p></div>
+                            <div class="side-price"><p id="price-area-max"></p></div>
+                            <!--<div class="side-price"><p id="price-area-mid"></p></div>-->
+                            <div class="side-price"><p id="price-area-min"></p></div>
+                            <div class="side-price"><p id="price-area-zero">R$0</p></div>
                         </div>
                         <div id="infos-area">
                             <div id="line-area">
@@ -84,7 +84,7 @@
                                     <div class="trace"></div>
                                     <div class="trace"></div>
                                     <div class="trace"></div>
-                                    <div class="trace"></div>
+                                    <!--<div class="trace"></div>-->
                                 </div>
                                 <div id="container-bars">
                                     <div class="bars" id="bar-jan"></div>
@@ -119,32 +119,34 @@
                     </div>
                 </div>
                 <div class="mid">
-                    <h2 class="title">Análise</h2>
+                    <h2 class="title" id="title-analysis">Análise</h2>
                     <div id="analysis">
                         <div id="analysis-sales">
                                 <div id="first-sales">
                                     <div id="first-sales-form" class="sales-form">
                                         <div class="analysis-circle">
-                                            <h1 id="info-bolet">12,24%</h1>
+                                            <h1 id="info-bolet">-</h1>
                                             <p class="default-par">Boleto Bancário</p>
                                         </div>
                                     </div>
                                     <div id="second-sales-form" class="sales-form">
                                         <div class="analysis-circle">
-                                            <h1 id="info-card">87,76%</h1>
+                                            <h1 id="info-card">-</h1>
                                             <p class="default-par">Cartão de Crédito</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="third-sales-form">
-                                    <h1 id="info-sale-brazil">784</h1>
+                                    <h1 id="info-sale-brazil">-</h1>
                                     <p id="default-par-third">Vendas no Brasil</p>
                                 </div>
                             </div>
                         <div id="analysis-map">
-                            <div id="regions">
-                                <!--<div id="region-sul">teste</div>-->
-                            </div>
+                            <div class= "region" id="region-sul"><p id="info-sul">-</p></div>
+                            <div class= "region" id="region-norte"><p id="info-norte">-</p></div>
+                            <div class= "region" id="region-sudeste"><p id="info-sud">-</p></div>
+                            <div class= "region" id="region-nordeste"><p p id="info-nord">-</p></div>
+                            <div class= "region" id="region-centro"><p id="info-centro">-</p></div>
                             <div id="svg-map">
                                 <object data="svg/Brazil_Map.svg" id="svg"></object>
                             </div>
@@ -196,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="end" di="graphic-c">
+                <div class="end" id="graphic-c">
                     <h2>Produto C</h2>
                     <div class="container-graphic">
                         <div class="graphic-bars three" id="graphic-one-c">
@@ -226,6 +228,7 @@
     </footer>
     <script src="js/graphic.js"></script>
     <script src="js/first_bar.js"></script>
+    <script src="js/execute.js"></script>
     <script src="https://kit.fontawesome.com/f674cd130e.js" crossorigin="anonymous"></script>
 </body>
 </html>
