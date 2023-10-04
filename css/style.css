@@ -313,6 +313,7 @@ body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #l
   height: 23.7%;
   padding: 0 0.5vw;
   margin-bottom: 0.25vw;
+  border: solid 1px red;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars .bars {
   transition: 0.5s;
@@ -321,6 +322,10 @@ body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #l
   width: 4%;
   background-color: #3a60b1;
   box-shadow: 0.2vw 0vw 0vw 0vw #223766;
+}
+body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars .info-bars {
+  position: absolute;
+  border: solid 2px red;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #month-area {
   display: flex;
@@ -424,8 +429,45 @@ body #container #dashboard-info #second-bar #analysis #analysis-map {
   align-items: center;
   position: absolute;
   justify-content: flex-start;
-  margin-bottom: 1.5vw;
-  right: 1.5vw;
+  margin-bottom: 1.9vw;
+  right: 2vw;
+}
+body #container #dashboard-info #second-bar #analysis #analysis-map .info-region {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #696969;
+  border: solid 2px black;
+  border-radius: 5px;
+  width: 25%;
+  height: 1.2vw;
+  z-index: 2;
+}
+body #container #dashboard-info #second-bar #analysis #analysis-map .info-region .font-info-region {
+  color: #F2F2F2;
+  font-size: 0.7vw;
+}
+body #container #dashboard-info #second-bar #analysis #analysis-map #info-region-sul {
+  top: 65%;
+}
+body #container #dashboard-info #second-bar #analysis #analysis-map #info-region-norte {
+  top: 9%;
+  left: 26%;
+}
+body #container #dashboard-info #second-bar #analysis #analysis-map #info-region-sudeste {
+  top: 48.5%;
+  right: 27%;
+}
+body #container #dashboard-info #second-bar #analysis #analysis-map #info-region-nordeste {
+  top: 19%;
+  right: 15%;
+}
+body #container #dashboard-info #second-bar #analysis #analysis-map #info-region-centro {
+  top: 30%;
+  left: 34%;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-map .region {
   display: flex;
@@ -468,14 +510,14 @@ body #container #dashboard-info #second-bar #analysis #analysis-map #region-nord
   font-size: 0.8vw;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-map #region-centro {
-  top: 45%;
-  left: 40%;
+  top: 42%;
+  left: 38%;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-map #region-centro #info-centro {
   font-size: 0.8vw;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-map #svg-map {
-  height: 14vw;
+  height: 12vw;
 }
 body #container #dashboard-info #second-bar #analysis #analysis-map #svg-map #svg {
   height: 100%;

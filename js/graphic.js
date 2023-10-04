@@ -548,3 +548,40 @@ function graphic_mid(){
         }
     })
 }
+
+    const map = document.querySelector('#analysis-map');
+    const info_div = document.createElement('div')
+    const font_info_text = document.createElement('p')
+
+    const region_text = [
+        document.createTextNode("Sul"),
+        document.createTextNode("Norte"),
+        document.createTextNode("Sudeste"),
+        document.createTextNode("Nordeste"),
+        document.createTextNode("Centro"),
+    ]
+
+    const id_region = [
+        'info-region-sul',
+        'info-region-norte',
+        'info-region-sudeste',
+        'info-region-nordeste',
+        'info-region-centro'
+    ]
+
+    function appaer_info(region){
+            font_info_text.classList.add('font-info-region')
+
+            info_div.classList.add('info-region')
+            info_div.setAttribute('id', id_region[region])
+            
+            map.appendChild(info_div);
+            info_div.appendChild(font_info_text);
+            font_info_text.appendChild(region_text[region])
+    }
+
+    function hide_info(reg){
+            font_info_text.removeChild(region_text[reg])
+            info_div.removeChild(font_info_text);
+            map.removeChild(info_div);
+    }

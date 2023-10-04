@@ -87,6 +87,7 @@
                                     <!--<div class="trace"></div>-->
                                 </div>
                                 <div id="container-bars">
+                                    <div class="info-bars">10000</div>
                                     <div class="bars" id="bar-jan"></div>
                                     <div class="bars" id="bar-fev"></div>
                                     <div class="bars" id="bar-mar"></div>
@@ -142,11 +143,11 @@
                                 </div>
                             </div>
                         <div id="analysis-map">
-                            <div class= "region" id="region-sul"><p id="info-sul">-</p></div>
-                            <div class= "region" id="region-norte"><p id="info-norte">-</p></div>
-                            <div class= "region" id="region-sudeste"><p id="info-sud">-</p></div>
-                            <div class= "region" id="region-nordeste"><p p id="info-nord">-</p></div>
-                            <div class= "region" id="region-centro"><p id="info-centro">-</p></div>
+                            <div class= "region" id="region-sul" onmouseover="appaer_info(0)" onmouseout="hide_info(0)"><p id="info-sul">-</p></div>
+                            <div class= "region" id="region-norte" onmouseover="appaer_info(1)" onmouseout="hide_info(1)"><p id="info-norte">-</p></div>
+                            <div class= "region" id="region-sudeste" onmouseover="appaer_info(2)" onmouseout="hide_info(2)"><p id="info-sud">-</p></div>
+                            <div class= "region" id="region-nordeste" onmouseover="appaer_info(3)" onmouseout="hide_info(3)"><p p id="info-nord">-</p></div>
+                            <div class= "region" id="region-centro" onmouseover="appaer_info(4)" onmouseout="hide_info(4)"><p id="info-centro">-</p></div>
                             <div id="svg-map">
                                 <object data="svg/Brazil_Map.svg" id="svg"></object>
                             </div>

@@ -2,18 +2,20 @@
 @import '_colors.scss';
 @import 'mixin.scss';
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 1vw;
     font-family: 'Open Sans', sans-serif;
 }
-body{
-    width:100%;
-    height:100vh;
+
+body {
+    width: 100%;
+    height: 100vh;
     background-color: $gray;
-    header{
+
+    header {
         @include container-row;
         justify-content: center;
         position: sticky;
@@ -21,101 +23,117 @@ body{
         background-color: $gray-dark;
         width: 100%;
         height: 8%;
-        color:$white;
-        #nav{
+        color: $white;
+
+        #nav {
             @include container-row;
             justify-content: space-between;
             width: 95%;
             text-transform: uppercase;
             letter-spacing: 1px;
-            h2{
+
+            h2 {
                 font-size: 0.9vw;
             }
-            ul{
+
+            ul {
                 @include container-row;
                 justify-content: space-between;
                 list-style: none;
-                width:30%;
-                li{
+                width: 30%;
+
+                li {
                     transition: 0.2s;
                     text-align: center;
-                    width:30%;
+                    width: 30%;
                     border-radius: 2vw;
                     font-size: 0.8vw;
                 }
-                li:hover{
+
+                li:hover {
                     transition: 0.2s;
                     background-color: $gray;
-                    cursor:pointer;
+                    cursor: pointer;
                 }
             }
         }
     }
-    #container{
+
+    #container {
         @include container-row;
         justify-content: space-between;
         margin: 2vw auto;
         background-color: $gray-dark;
-        width:95%;
+        width: 95%;
         height: 90%;
         border-radius: 0.5vw;
         z-index: 2;
-        #side-bar{
+
+        #side-bar {
             @include container-column;
             background-color: $gray-darkl;
             width: 15%;
-            height:95%;
+            height: 95%;
             border-radius: 10px;
             padding: 0.5vw;
             margin-left: 0.5vw;
             box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw black;
-            h2{
+
+            h2 {
                 font-size: 0.9vw;
             }
-            #img-profile{
+
+            #img-profile {
                 background-color: $white;
                 width: 8vw;
                 height: 8vw;
                 border-radius: 50%;
             }
-            .list-side{
+
+            .list-side {
                 width: 70%;
-                height:25%;
+                height: 25%;
                 margin-top: 0.7vw;
-                color:$white;
+                color: $white;
             }
-            .options-side{
-                width:60%;
+
+            .options-side {
+                width: 60%;
                 margin-top: 0.5vw;
-                padding:0.2vw;
+                padding: 0.2vw;
                 font-size: 0.8vw;
                 border-radius: 5px;
                 transition: 0.2s;
                 padding-left: 0.8vw;
             }
-            .options-side:hover{
+
+            .options-side:hover {
                 transition: 0.2s;
                 background-color: #3a60b1;
-                cursor:pointer;
-                color:$white;
+                cursor: pointer;
+                color: $white;
             }
-            .options-side-enable{
+
+            .options-side-enable {
                 background-color: #3a60b1;
             }
         }
-        #dashboard-info{
+
+        #dashboard-info {
             @include container-column;
             justify-content: flex-start;
             width: 82%;
             height: 100%;
-            padding:0.5vw;
-            #first-bar{
+            padding: 0.5vw;
+
+            #first-bar {
                 @include container-row;
                 justify-content: space-between;
                 width: 100%;
                 height: 25%;
                 padding: 0.25vw;
-                .first{
+
+                .first {
                     @include container-column;
                     align-items: flex-start;
                     background-color: #525252;
@@ -125,44 +143,54 @@ body{
                     border-radius: 10px;
                     box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw black;
                     transition: 0.2s;
-                    .title{
+
+                    .title {
                         font-size: 0.7vw;
-                        color:$white;
+                        color: $white;
                     }
-                    .products{
+
+                    .products {
                         @include container-row;
-                        margin-top:0.5vw;
-                        i{
+                        margin-top: 0.5vw;
+
+                        i {
                             margin-top: 0.7vw;
                             font-size: 3vw;
-                            margin:0.1vw;
-                            color:$white;
+                            margin: 0.1vw;
+                            color: $white;
                         }
-                        p{
+
+                        p {
                             font-size: 0.7vw;
                             margin-left: 1vw;
                         }
-                        #back-icon-a{
+
+                        #back-icon-a {
                             background-color: $graphicOne;
                         }
-                        #back-icon-b{
+
+                        #back-icon-b {
                             background-color: $graphicTwo;
                         }
-                        #back-icon-c{
+
+                        #back-icon-c {
                             background-color: $graphicThree;
                         }
-                        #back-icon-total{
+
+                        #back-icon-total {
                             background-color: #3a60b1;
                         }
-                        .circle-icon{
+
+                        .circle-icon {
                             @include container-column;
                             justify-content: center;
                             border-radius: 50%;
-                            height:4vw;
+                            height: 4vw;
                             width: 10vw;
                         }
                     }
                 }
+
                 /*.pro-a:hover{
                     background-color: #df34ba50;
                     cursor:pointer;
@@ -179,101 +207,121 @@ body{
                     background-color: #3a60b150;
                     cursor: pointer;
                 }*/
-                .first-view-enable-a{
+                .first-view-enable-a {
                     background-color: #df34ba50;
                 }
-                .first-view-enable-b{
+
+                .first-view-enable-b {
                     background-color: #368c3650;
                 }
-                .first-view-enable-c{
+
+                .first-view-enable-c {
                     background-color: #c7722250;
                 }
             }
-            #second-bar{
+
+            #second-bar {
                 @include container-row;
                 justify-content: space-between;
                 width: 100%;
                 height: 45%;
                 padding: 0.25vw;
-                #fatury{
+
+                #fatury {
                     @include container-column;
                     justify-content: space-around;
                     align-items: flex-start;
-                    #graphic-area{
+
+                    #graphic-area {
                         @include container-row;
                         width: 99%;
                         height: 90%;
-                        #side-area{
+
+                        #side-area {
                             align-self: flex-end;
                             @include container-column;
                             justify-content: space-between;
                             width: 15%;
-                            height:97%;
+                            height: 97%;
                             margin-bottom: 1vw;
+
                             //border: solid 1px blue;
-                            .side-price{
-                                p{
+                            .side-price {
+                                p {
                                     color: $white;
                                     font-size: 0.6vw;
-                                    margin-top: 0.2vw; 
+                                    margin-top: 0.2vw;
                                 }
                             }
                         }
-                        #infos-area{
+
+                        #infos-area {
                             @include container-column;
                             width: 85%;
                             height: 100%;
-                            #line-area{
+
+                            #line-area {
                                 @include container-column;
                                 justify-content: flex-end;
                                 width: 100%;
                                 height: 90%;
+
                                 //border: solid 1px blue;
-                                #point-line{
+                                #point-line {
                                     align-self: flex-start;
                                     @include container-column;
                                     justify-content: space-between;
                                     position: absolute;
                                     z-index: 1;
                                     width: 30.5%;
-                                    height:35.7%;
+                                    height: 35.7%;
                                     margin-bottom: 0.2vw;
+
                                     //border: solid 1px red;
-                                    .trace{
+                                    .trace {
                                         border-bottom: solid 1px $black;
                                         border-bottom-style: dashed;
                                         width: 100%;
                                         height: 100%;
                                     }
                                 }
-                                    #container-bars{
-                                        position: absolute;
-                                        z-index: 2;
-                                        @include container-row;
-                                        justify-content: space-around;
-                                        align-items: flex-end;
-                                        margin-right: 0.95vw;
-                                        width: 32.9%;
-                                        height: 23.7%;
-                                        padding: 0 0.5vw;
-                                        margin-bottom: 0.25vw;
-                                        //border: solid 1px red;
-                                        .bars{
-                                            transition: 0.5s;
-                                            font-size: 0.7vw;
-                                            height: 100%;
-                                            width: 4%;
-                                            background-color: #3a60b1;
-                                            box-shadow: 0.2vw 0vw 0vw 0vw #223766;
-                                        }
+
+                                #container-bars {
+                                    position: absolute;
+                                    z-index: 2;
+                                    @include container-row;
+                                    justify-content: space-around;
+                                    align-items: flex-end;
+                                    margin-right: 0.95vw;
+                                    width: 32.9%;
+                                    height: 23.7%;
+                                    padding: 0 0.5vw;
+                                    margin-bottom: 0.25vw;
+                                    border: solid 1px red;
+
+                                    .bars {
+                                        transition: 0.5s;
+                                        font-size: 0.7vw;
+                                        height: 100%;
+                                        width: 4%;
+                                        background-color: #3a60b1;
+                                        box-shadow: 0.2vw 0vw 0vw 0vw #223766;
                                     }
+
+                                    .info-bars {
+                                        position: absolute;
+                                        border: solid 2px red;
+                                    }
+                                }
                             }
-                            #month-area{
+
+                            #month-area {
                                 @include container-row;
                                 justify-content: flex-start;
                                 width: 98%;
                                 height: 10%;
-                                p{
+
+                                p {
                                     margin-right: 1.5vw;
                                     font-size: 0.7vw;
                                     color: $white;
@@ -282,53 +330,62 @@ body{
                         }
                     }
                 }
-                #analysis{
+
+                #analysis {
                     @include container-row;
                     height: 94%;
-                    #analysis-sales{
+
+                    #analysis-sales {
                         @include container-row;
-                        justify-content: flex-start; 
+                        justify-content: flex-start;
                         width: 70%;
                         height: 100%;
-                        padding:0.3vw;
-                        #first-sales{
+                        padding: 0.3vw;
+
+                        #first-sales {
                             @include container-column;
                             width: 50%;
                             height: 90%;
-                            #first-sales-form{
-                                #info-bolet{
+
+                            #first-sales-form {
+                                #info-bolet {
                                     color: $white;
                                     font-size: 1.3vw;
                                 }
                             }
-                            #second-sales-form{
-                                #info-card{
+
+                            #second-sales-form {
+                                #info-card {
                                     color: $white;
                                     font-size: 1.3vw;
                                 }
                             }
-                            .sales-form{
+
+                            .sales-form {
                                 @include container-column;
                                 justify-content: center;
                                 //margin: 0.1vw;
                                 height: 50%;
                                 width: 110%;
-                                .analysis-circle{
+
+                                .analysis-circle {
                                     @include container-column;
                                     justify-content: center;
                                     width: 85%;
-                                    height:90%;
+                                    height: 90%;
                                     border: solid 0.15vw $white;
                                     border-radius: 1rem;
                                     background-color: $gray-dark;
-                                    .default-par{
+
+                                    .default-par {
                                         color: $white;
                                         font-size: 0.8vw;
                                     }
-                                }  
+                                }
                             }
                         }
-                        #third-sales-form{
+
+                        #third-sales-form {
                             @include container-column;
                             position: absolute;
                             right: 17vw;
@@ -339,106 +396,171 @@ body{
                             height: 8.2vw;
                             border: solid 0.20vw $black;
                             border-radius: 50%;
-                            #info-sale-brazil{
+
+                            #info-sale-brazil {
                                 color: $black;
                                 font-size: 2vw;
                             }
-                            #default-par-third{
+
+                            #default-par-third {
                                 color: $black;
                                 font-size: 0.7vw;
                             }
                         }
                     }
-                    #analysis-map{
+
+                    #analysis-map {
                         @include container-column;
-                        position:absolute; 
+                        position: absolute;
                         justify-content: flex-start;
                         //border: solid 2px red;
-                        margin-bottom: 1.5vw;
-                        right: 1.5vw;
-                        .region{
+                        //width: 15%;
+                        //height: 31vh;
+                        margin-bottom: 1.9vw;
+                        right: 2vw;
+
+                        .info-region {
+                            @include container-column;
+                            justify-content: center;
+                            position: absolute;
+                            background-color: $gray;
+                            border: solid 2px black;
+                            border-radius: 5px;
+                            width: 25%;
+                            height: 1.2vw;
+                            z-index: 2;
+
+                            .font-info-region {
+                                color: $white;
+                                font-size: 0.7vw;
+                            }
+                        }
+
+                        #info-region-sul {
+                            top: 65%;
+                        }
+
+                        #info-region-norte {
+                            top: 9%;
+                            left: 26%;
+                        }
+
+                        #info-region-sudeste {
+                            top: 48.5%;
+                            right: 27%;
+                        }
+
+                        #info-region-nordeste {
+                            top: 19%;
+                            right: 15%;
+                        }
+
+                        #info-region-centro {
+                            top: 30%;
+                            left: 34%;
+                        }
+
+                        .region {
                             @include container-row;
                             justify-content: center;
                             background-color: $white;
                             border: solid 0.15vw $black;
-                            border-radius:50%;
+                            border-radius: 50%;
                             width: 2.2vw;
                             height: 2.2vw;
-                            position:absolute;
+                            position: absolute;
                         }
-                        #region-sul{
+
+                        #region-sul {
                             top: 75%;
-                            #info-sul{
+
+                            #info-sul {
                                 font-size: 0.8vw;
                             }
                         }
-                        #region-norte{
-                            top:20%;
+
+                        #region-norte {
+                            top: 20%;
                             left: 30%;
-                            #info-norte{
+
+                            #info-norte {
                                 font-size: 0.8vw;
                             }
                         }
-                        #region-sudeste{
-                            top:59%;
+
+                        #region-sudeste {
+                            top: 59%;
                             right: 32%;
-                            #info-sud{
+
+                            #info-sud {
                                 font-size: 0.8vw;
                             }
                         }
-                        #region-nordeste{
+
+                        #region-nordeste {
                             top: 30%;
-                            right:20%;
-                            #info-nord{
+                            right: 20%;
+
+                            #info-nord {
                                 font-size: 0.8vw;
                             }
                         }
-                        #region-centro{
-                            top: 45%;
-                            left:40%;
-                            #info-centro{
+
+                        #region-centro {
+                            top: 42%;
+                            left: 38%;
+
+                            #info-centro {
                                 font-size: 0.8vw;
                             }
                         }
-                        #svg-map{
-                            height:14vw;
-                            #svg{
+
+                        #svg-map {
+                            height: 12vw;
+
+                            #svg {
                                 //position:relative; 
-                                height:100%;
+                                height: 100%;
                                 left: 1vw;
                             }
                         }
                     }
                 }
-                .mid{
+
+                .mid {
                     background-color: $gray-darkl;
                     width: 49%;
                     height: 95%;
                     border-radius: 10px;
                     box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw black;
-                    .title{
+
+                    .title {
                         margin-left: 0.5vw;
                         font-size: 1rem;
-                        color:$white-dark;
+                        color: $white-dark;
                         margin-bottom: 1vw;
                     }
-                    #title-analysis{
+
+                    #title-analysis {
                         margin-bottom: 0vw;
                     }
                 }
             }
-            #third-bar{
+
+            #third-bar {
                 @include container-row;
                 justify-content: space-between;
                 width: 100%;
                 height: 45%;
                 padding: 0.25vw;
-                h2{
+
+                h2 {
                     font-size: 1vw;
                     color: $white;
                     margin: 0.5vw 0 0 1vw;
                 }
-                .end{
+
+                .end {
                     @include container-column;
                     justify-content: space-between;
                     background-color: $gray-darkl;
@@ -446,47 +568,55 @@ body{
                     height: 95%;
                     border-radius: 10px;
                     box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw black;
-                    h2{
+
+                    h2 {
                         align-self: flex-start;
                         font-size: 0.7vw;
                     }
-                    .container-graphic{
+
+                    .container-graphic {
                         @include container-row;
                         justify-content: space-around;
                         align-items: flex-end;
-                        width:95%;
+                        width: 95%;
                         height: 80%;
-                        .graphic-bars{
+
+                        .graphic-bars {
                             @include container-column;
                             justify-content: space-between;
                             width: 20%;
-                            height:100%;
+                            height: 100%;
                             padding: 0.5vw;
-                            transition:0.5s;
-                            .month{
+                            transition: 0.5s;
+
+                            .month {
                                 font-size: 0.7vw;
                                 color: $white-dark;
                             }
-                            .price{
+
+                            .price {
                                 font-size: 0.5vw;
-                                color:$white-dark;
+                                color: $white-dark;
                             }
                         }
-                        .one{
+
+                        .one {
                             background-color: $graphicOne;
                             box-shadow: 0.4vw 0vw 0.1vw 0vw #6d185a;
                         }
-                        .two{
+
+                        .two {
                             background-color: $graphicTwo;
                             box-shadow: 0.4vw 0vw 0.1vw 0vw #133813;
                         }
-                        .three{
+
+                        .three {
                             background-color: $graphicThree;
                             box-shadow: 0.4vw 0vw 0.1vw 0vw #663609;
                         }
                     }
                 }
-            }      
+            }
         }
     }
 }
