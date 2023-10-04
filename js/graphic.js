@@ -42,21 +42,42 @@ const price_month = {
         dez: 9550
     }
 }
+let teste = 15;
 const sales_products = {
     first_product:{
-        bolet:412,
-        card: 384,
+        bolet:410,
+        card: 201,
     },
     second_product:{
-        bolet: 622,
-        card: 237
+        bolet: 353,
+        card: 287
     },
     third_product:{
-        bolet: 311,
-        card: 424
+        bolet: 265,
+        card: 355
+    },
+    region_first:{
+        sul: 45,
+        norte: 197,
+        sudeste: 157,
+        nordeste: 148,
+        centro: 64
+    },
+    region_second:{
+        sul: 170,
+        norte: 124,
+        sudeste: 177,
+        nordeste: 87,
+        centro: 82
+    },
+    region_third:{
+        sul: 84,
+        norte: 217,
+        sudeste: 107,
+        nordeste: 98,
+        centro: 114
     }
 }
-console.log(sales_products.first_product.bolet)
 const products_values = {
     first_product:{
         last_year:{
@@ -363,6 +384,13 @@ function graphic_mid(){
         document.querySelector('#info-card'),
         document.querySelector('#info-sale-brazil')
     ]
+    const region_date = [
+        document.querySelector('#info-sul'),
+        document.querySelector('#info-norte'), 
+        document.querySelector('#info-sud'),
+        document.querySelector('#info-nord'),
+        document.querySelector('#info-centro'),               
+    ]
     let bar_month = [];
     bar_month = document.querySelectorAll('.bars');
 
@@ -395,6 +423,8 @@ function graphic_mid(){
             let sales = Object.entries(sales_products.first_product)
             let sales_brazil = sales[0][1] + sales[1][1]
 
+            let regions = Object.entries(sales_products.region_first)
+
             let values = Object.entries(price_month.first_product);
             maxPrice(values);
             price_side[0].innerText = `R$${max_price},00`;
@@ -407,6 +437,9 @@ function graphic_mid(){
                     sales_date[i].innerText = `${porctg}%`
                     sales_date[2].innerText = `${sales_brazil}`
                 }
+                if(i < 5){
+                    region_date[i].innerText = regions[i][1];
+                }
             }
             state[0] = 1;
         }else{
@@ -414,6 +447,9 @@ function graphic_mid(){
                 bar_month[i].style.height=`100%`;
                 if(i < 3){
                     sales_date[i].innerText = `-`
+                }
+                if(i < 5){
+                    region_date[i].innerText = `-`
                 }
             }
             price_side[0].innerText = ``;
@@ -431,6 +467,8 @@ function graphic_mid(){
             let sales = Object.entries(sales_products.second_product)
             let sales_brazil = sales[0][1] + sales[1][1]
 
+            let regions = Object.entries(sales_products.region_second)
+
             let values = Object.entries(price_month.second_product);
             maxPrice(values)
             price_side[0].innerText = `R$${max_price},00`;
@@ -444,6 +482,9 @@ function graphic_mid(){
                     sales_date[i].innerText = `${porctg}%`
                     sales_date[2].innerText = `${sales_brazil}`
                 }
+                if(i < 5){
+                    region_date[i].innerText = regions[i][1];
+                }
             }
             state[1] = 1;
         }else{
@@ -451,6 +492,9 @@ function graphic_mid(){
                 bar_month[i].style.height=`100%`;
                 if(i < 3){
                     sales_date[i].innerText = `-`
+                }
+                if(i < 5){
+                    region_date[i].innerText = `-`
                 }
             }
             price_side[0].innerText = ``;
@@ -468,6 +512,8 @@ function graphic_mid(){
             let sales = Object.entries(sales_products.third_product)
             let sales_brazil = sales[0][1] + sales[1][1]
 
+            let regions = Object.entries(sales_products.region_third)
+
             let values = Object.entries(price_month.third_product);
             maxPrice(values)
             price_side[0].innerText = `R$${max_price},00`;
@@ -481,6 +527,9 @@ function graphic_mid(){
                     sales_date[i].innerText = `${porctg}%`
                     sales_date[2].innerText = `${sales_brazil}`
                 }
+                if( i < 5){
+                    region_date[i].innerText = regions[i][1];
+                }
             }
             state[2] = 1;
         }else{
@@ -488,6 +537,9 @@ function graphic_mid(){
                 bar_month[i].style.height=`100%`;
                 if(i < 3){
                     sales_date[i].innerText = `-`
+                }
+                if(i < 5){
+                    region_date[i].innerText = `-`
                 }
             }
             price_side[0].innerText = ``;
