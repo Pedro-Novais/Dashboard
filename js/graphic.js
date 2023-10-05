@@ -167,7 +167,8 @@ const btn_year ={
     mid: document.querySelector('#mid-year'),
     first: document.querySelector('#first-year')
 } 
-function graphic_end(){
+
+//function graphic_end(){
         let array_price = [];
         array_price = document.querySelectorAll('.price')
         let array_priceF  = Object.entries(array_price); 
@@ -185,14 +186,14 @@ function graphic_end(){
 
     let state = [0,0,0];
     let state_array = [[],[],[]];
-
+        let year_product;
     btn_year.last.addEventListener("click", () =>{
         state[1] = 0;
         state[2] = 0;
         if(state[0] == 0){
             let array_product;
             let array_graphic;
-            let year_product;
+            //let year_product;
 
             btn_year.first.classList.remove('options-side-enable');
             btn_year.mid.classList.remove('options-side-enable');
@@ -248,7 +249,7 @@ function graphic_end(){
         if(state[1] == 0){
             let array_product;
             let array_graphic;
-            let year_product;
+            //let year_product;
 
             btn_year.first.classList.remove('options-side-enable');
             btn_year.mid.classList.add('options-side-enable');
@@ -305,8 +306,8 @@ function graphic_end(){
         if(state[2] == 0){
             let array_product;
             let array_graphic;
-            let year_product
-
+            //let year_product
+            
             btn_year.first.classList.add('options-side-enable');
             btn_year.mid.classList.remove('options-side-enable');
             btn_year.last.classList.remove('options-side-enable');
@@ -366,7 +367,7 @@ function graphic_end(){
             }
         }
     }
-}
+
 
 function graphic_mid(){
     const btn_year = [
@@ -548,10 +549,33 @@ function graphic_mid(){
         }
     })
 }
+    let bar_month = [];
+    bar_month = document.querySelectorAll('.bars')
+    const div = document.createElement('div');
+    const font_price = document.createElement('p');
+    let info = document.createTextNode(`R$${price_month.first_product.abr},00`)
+
+    console.log(price_month.first_product.abr);
+    
+    function appaer_price(pos){
+        div.classList.add('info-bars')
+        font_price.classList.add('font-bar-price')
+
+        bar_month[pos].appendChild(div);
+        div.appendChild(font_price);
+        font_price.appendChild(info);
+    }
+
+    function hide_price(pos){
+        font_price.removeChild(info);
+        div.removeChild(font_price);
+        bar_month[pos].removeChild(div);
+    }
+
 
     const map = document.querySelector('#analysis-map');
-    const info_div = document.createElement('div')
-    const font_info_text = document.createElement('p')
+    const info_div = document.createElement('div');
+    const font_info_text = document.createElement('p');
 
     const region_text = [
         document.createTextNode("Sul"),

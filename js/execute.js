@@ -1,2 +1,2 @@
-graphic_end();
+//graphic_end();
 graphic_mid();

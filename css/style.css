@@ -313,19 +313,29 @@ body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #l
   height: 23.7%;
   padding: 0 0.5vw;
   margin-bottom: 0.25vw;
-  border: solid 1px red;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars .bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   transition: 0.5s;
   font-size: 0.7vw;
   height: 100%;
   width: 4%;
   background-color: #3a60b1;
-  box-shadow: 0.2vw 0vw 0vw 0vw #223766;
+  box-shadow: 0.2vw 0vw 0vw 0vw #293b61;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars .info-bars {
   position: absolute;
-  border: solid 2px red;
+  background-color: #657eb4;
+  border: solid 2px #F2F2F2;
+  border-radius: 5px;
+  padding: 0.1vw;
+}
+body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars .info-bars .font-bar-price {
+  color: #0D0D0D;
+  font-size: 0.7vw;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #month-area {
   display: flex;
