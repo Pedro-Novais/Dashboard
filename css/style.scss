@@ -315,7 +315,7 @@ body {
                                         border-radius: 5px;
                                         padding: 0.1vw;
                                         .font-bar-price{
-                                            color: $black;
+                                            color: $white;
                                             font-size: 0.7vw;
                                         }
                                     }
@@ -595,6 +595,8 @@ body {
                             height: 100%;
                             padding: 0.5vw;
                             transition: 0.5s;
+                            border-top-right-radius: 5px;
+                            border-top-left-radius: 5px;
 
                             .month {
                                 font-size: 0.7vw;
@@ -609,17 +611,17 @@ body {
 
                         .one {
                             background-color: $graphicOne;
-                            box-shadow: 0.4vw 0vw 0.1vw 0vw #6d185a;
+                            box-shadow: 0.4vw 0vw 0vw 0vw #a3378a95;
                         }
 
                         .two {
                             background-color: $graphicTwo;
-                            box-shadow: 0.4vw 0vw 0.1vw 0vw #133813;
+                            box-shadow: 0.4vw 0vw 0vw 0vw #285c2895;
                         }
 
                         .three {
                             background-color: $graphicThree;
-                            box-shadow: 0.4vw 0vw 0.1vw 0vw #663609;
+                            box-shadow: 0.4vw 0vw 0vw 0vw #7c553195;
                         }
                     }
                 }

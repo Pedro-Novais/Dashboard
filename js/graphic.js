@@ -42,7 +42,6 @@ const price_month = {
         dez: 9550
     }
 }
-let teste = 15;
 const sales_products = {
     first_product:{
         bolet:410,
@@ -78,6 +77,30 @@ const sales_products = {
         centro: 114
     }
 }
+    /*const years = Object.entries(data_year)
+    const months = Object.entries(price_month)
+    let valor;
+    function calcTri(prod, tri){
+        let value = [];
+        let prods;
+        if(prod == 0){
+            prods = Object.entries(price_month.first_product)
+        }else if(prod == 1){
+            prods = Object.entries(price_month.second_product)
+        }else if(prod == 2){
+            prods = Object.entries(price_month.third_product)
+        }
+            for(let i = 0; i < 12; i++){
+                if(i == tri * 3){
+                    while(i>=0){
+                        value = prods[i]
+                        i--;
+                    }
+                }
+            }
+            valor = 1200
+    }*/
+
 const products_values = {
     first_product:{
         last_year:{
@@ -140,7 +163,7 @@ const products_values = {
         }
     }
 }
-
+console.log(products_values.first_product.last_year.until_mar)
 const graphic_one = {
     first: document.querySelector('#graphic-one-a'),
     second: document.querySelector('#graphic-two-a'),
@@ -427,6 +450,7 @@ function graphic_mid(){
             let regions = Object.entries(sales_products.region_first)
 
             let values = Object.entries(price_month.first_product);
+
             maxPrice(values);
             price_side[0].innerText = `R$${max_price},00`;
             price_side[1].innerText = `R$${calc_min},00`;
@@ -553,7 +577,7 @@ function graphic_mid(){
     bar_month = document.querySelectorAll('.bars')
     const div = document.createElement('div');
     const font_price = document.createElement('p');
-    let info = document.createTextNode(`R$${price_month.first_product.abr},00`)
+    let info = document.createTextNode(`Teste`)
 
     console.log(price_month.first_product.abr);
     

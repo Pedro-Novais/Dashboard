@@ -334,7 +334,7 @@ body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #l
   padding: 0.1vw;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #line-area #container-bars .info-bars .font-bar-price {
-  color: #0D0D0D;
+  color: #F2F2F2;
   font-size: 0.7vw;
 }
 body #container #dashboard-info #second-bar #fatury #graphic-area #infos-area #month-area {
@@ -600,6 +600,8 @@ body #container #dashboard-info #third-bar .end .container-graphic .graphic-bars
   height: 100%;
   padding: 0.5vw;
   transition: 0.5s;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 body #container #dashboard-info #third-bar .end .container-graphic .graphic-bars .month {
   font-size: 0.7vw;
@@ -611,13 +613,13 @@ body #container #dashboard-info #third-bar .end .container-graphic .graphic-bars
 }
 body #container #dashboard-info #third-bar .end .container-graphic .one {
   background-color: #df34ba;
-  box-shadow: 0.4vw 0vw 0.1vw 0vw #6d185a;
+  box-shadow: 0.4vw 0vw 0vw 0vw rgba(163, 55, 138, 0.5843137255);
 }
 body #container #dashboard-info #third-bar .end .container-graphic .two {
   background-color: #378d37;
-  box-shadow: 0.4vw 0vw 0.1vw 0vw #133813;
+  box-shadow: 0.4vw 0vw 0vw 0vw rgba(40, 92, 40, 0.5843137255);
 }
 body #container #dashboard-info #third-bar .end .container-graphic .three {
   background-color: #c77222;
-  box-shadow: 0.4vw 0vw 0.1vw 0vw #663609;
+  box-shadow: 0.4vw 0vw 0vw 0vw rgba(124, 85, 49, 0.5843137255);
 }/*# sourceMappingURL=style.css.map */
