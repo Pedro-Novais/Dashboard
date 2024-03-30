@@ -15,50 +15,6 @@ body {
     height: 100vh;
     background-color: $gray;
 
-    header {
-        @include container-row;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        background-color: $gray-dark;
-        width: 100%;
-        height: 8%;
-        color: $white;
-
-        #nav {
-            @include container-row;
-            justify-content: space-between;
-            width: 95%;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-
-            h2 {
-                font-size: 0.9vw;
-            }
-
-            ul {
-                @include container-row;
-                justify-content: space-between;
-                list-style: none;
-                width: 30%;
-
-                li {
-                    transition: 0.2s;
-                    text-align: center;
-                    width: 30%;
-                    border-radius: 2vw;
-                    font-size: 0.8vw;
-                }
-
-                li:hover {
-                    transition: 0.2s;
-                    background-color: $gray;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-
     #container {
         @include container-row;
         justify-content: space-between;

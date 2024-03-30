@@ -163,7 +163,8 @@ const products_values = {
         }
     }
 }
-console.log(products_values.first_product.last_year.until_mar)
+
+
 const graphic_one = {
     first: document.querySelector('#graphic-one-a'),
     second: document.querySelector('#graphic-two-a'),
@@ -391,6 +392,7 @@ const btn_year ={
         }
     }
 
+    graphic_mid()
 
 function graphic_mid(){
     const btn_year = [
